@@ -26,13 +26,24 @@ body {
   font-weight: 800;
 }
 
+.form-field {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  line-height: 25px;
+  border-radius: 6px;
+}
+
 .form-group {
   position: relative;
   display: flex;
   margin-top: 20px;
-  width: 100%;
-  & > .form-field {
+  width: 50%;
+  & > .submit,
+  .form-field {
     white-space: nowrap;
+    line-height: 25px;
+    background-color: white;
     display: block;
     &:not(:first-child):not(:last-child) {
       border-radius: 0;
@@ -47,11 +58,4 @@ body {
       margin-left: -1px;
     }
   }
-}
-
-.form-field {
-  display: block;
-  width: 100%;
-  padding: 8px 16px;
-  line-height: 25px;
 }
